@@ -1,15 +1,21 @@
 package generic;
 
-public class MaximumSecondPosition {
+public class MaximumAtFirstPosition {
+
+    public static void main(String[] args) {
+            System.out.println("...............First Position.............");
+            System.out.println("Maximum Float out Of Three Float:");
+            float x = 5.5f, y = 2.2f, z = 3.3f;
+            new generic.Maximum(x, y, z).maximum();
+        }
+
     public class Maximum<T extends Comparable<T>> {
         T x, y, z;
-
         public Maximum(T x, T y, T z) {
             this.x = x;
             this.y = y;
             this.z = z;
         }
-
         public T maximum() {
             return generic.Maximum.maximum(x, y, z);
         }
@@ -27,12 +33,5 @@ public class MaximumSecondPosition {
             return max;
         }
 
-        public static void main(String[] args) {
-            System.out.println("/Second Position.............");
-            System.out.println("Maximum Number out Of Three Integer:");
-            Integer x = 5, y = 10, z = 2;
-            new generic.Maximum(x, y, z).maximum();
-        }
     }
 }
-
