@@ -1,13 +1,12 @@
 package generic;
 
-public class MaximumStringAtFirstPosition {
-
-        public static void main(String[] args) {
-            System.out.println("...............String At First Position.............");
-            System.out.println("Maximum String out Of Three String:");
-            String x = "Peach", y = "Apple", z = "Banana";
-            new generic.Maximum(x, y, z).maximum();
-        }
+public class MaxStringAtSecondPosition {
+    public static void main(String[] args) {
+        System.out.println("...............Maximum String At Second Position.............");
+        System.out.println("Maximum String out Of Three String:");
+        String x = "Apple", y = "Peach", z = "Banana";
+        new generic.Maximum(x, y, z).maximum();
+    }
     public class Maximum<T extends Comparable<T>> {
         T x, y, z;
 
