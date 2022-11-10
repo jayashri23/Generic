@@ -1,4 +1,4 @@
-package generic;
+package generic.com;
 
     public class Maximum<T extends Comparable<T>> {
     T x,y,z;

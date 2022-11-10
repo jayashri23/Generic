@@ -1,6 +1,12 @@
-package generic;
+package generic.com;
 
-public class MaximumSecondPosition {
+public class MaxStringAtThirdPosition {
+    public static void main(String[] args) {
+        System.out.println("...............Maximum String At Second Position.............");
+        System.out.println("Maximum String out Of Three String:");
+        String x = "Apple", y = "Banana", z = "Peach";
+        new generic.com.Maximum(x, y, z).maximum();
+    }
     public class Maximum<T extends Comparable<T>> {
         T x, y, z;
 
@@ -11,7 +17,7 @@ public class MaximumSecondPosition {
         }
 
         public T maximum() {
-            return generic.Maximum.maximum(x, y, z);
+            return generic.com.Maximum.maximum(x, y, z);
         }
 
         //determine max number out of three
@@ -26,13 +32,5 @@ public class MaximumSecondPosition {
             System.out.println(max);
             return max;
         }
-
-        public static void main(String[] args) {
-            System.out.println("/Second Position.............");
-            System.out.println("Maximum Number out Of Three Integer:");
-            Integer x = 5, y = 10, z = 2;
-            new generic.Maximum(x, y, z).maximum();
-        }
     }
 }
-

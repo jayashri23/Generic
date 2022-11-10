@@ -1,12 +1,11 @@
-package generic;
+package generic.com;
 
-public class MaximumFloatAtSecondPosition {
-
-    public static void main(String [] args){
-        System.out.println("...............Max At Second Position.............");
-        System.out.println("Maximum Float out Of Three Float:");
-        float x = 2.2f, y = 7.4f, z = 3.3f;
-        new generic.Maximum(x, y, z).maximum();
+public class MaxStringAtSecondPosition {
+    public static void main(String[] args) {
+        System.out.println("...............Maximum String At Second Position.............");
+        System.out.println("Maximum String out Of Three String:");
+        String x = "Apple", y = "Peach", z = "Banana";
+        new generic.com.Maximum(x, y, z).maximum();
     }
     public class Maximum<T extends Comparable<T>> {
         T x, y, z;
@@ -18,7 +17,7 @@ public class MaximumFloatAtSecondPosition {
         }
 
         public T maximum() {
-            return generic.Maximum.maximum(x, y, z);
+            return generic.com.Maximum.maximum(x, y, z);
         }
 
         //determine max number out of three

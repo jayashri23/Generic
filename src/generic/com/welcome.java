@@ -1,4 +1,4 @@
-package generic;
+package generic.com;
 
 public class welcome {
     public static void main(String [] args){
